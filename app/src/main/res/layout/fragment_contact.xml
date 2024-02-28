@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ContactFragment">
+
+    <TextView
+        android:id="@+id/titleContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/primary1"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/contactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:hint="Name"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border" />
+
+    <EditText
+        android:id="@+id/contactEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/contactName"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/contactSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/contactEmail"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/contactMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:layout_below="@id/contactSubject"
+        android:layout_marginTop="20dp" />
+
+
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:backgroundTint="@color/primary1"
+        android:layout_below="@id/contactMessage"
+        android:layout_marginTop="110dp" />
+
+</RelativeLayout>
